@@ -1,0 +1,47 @@
+.container{
+    padding: 1cm;
+    background-color: red;
+    width: 15em;
+    height: auto;
+    display: flex; 
+    flex-direction: column;
+}
+.header > p {
+    line-height: 0%;
+}
+.header{
+    background-color: royalblue;
+
+}
+.serving > h1{
+    font-size: small;
+}
+.container2 {  /*contains 3 columns with data*/
+    width: auto;
+    height: 4em;
+    background-color: white;
+    display: flex;
+  flex-flow:  column wrap;
+  align-content: space-between;
+}
+.container3{
+    background-color: grey;
+    width: auto;
+    height: 3em;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+
+
+
+.box2{  /*box2 represents the text on the top right corner*/
+background-color: yellow;
+display: flex;
+flex-direction: row;
+justify-content: right;
+}
+.box3{
+    background-color: turquoise;
+    margin-right: 0.5em; /*does not work, it needs different syntax*/  
+}
