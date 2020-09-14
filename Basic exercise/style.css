@@ -1,0 +1,12 @@
+.link {
+    width: auto;
+    height : auto;
+    background: lightgrey;
+    border-radius: 5px;
+    transition: width 2s;
+ }
+.link:hover{
+    font-weight: bold;
+    color: red;
+    font-size: large;
+}
