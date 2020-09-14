@@ -1,7 +1,9 @@
-.container{
-    padding: 1cm;
+.container-main{ /*main flex container, which holds all content*/
+    border-color: black;
+    border-style: dotted;
+    border-width: 2px;
     background-color: red;
-    width: 15em;
+    width: 21em;
     height: auto;
     display: flex; 
     flex-direction: column;
@@ -16,7 +18,7 @@
 .serving > h1{
     font-size: small;
 }
-.container2 {  /*contains 3 columns with data*/
+.container2 {  /*contains 3 columns with 3 rows*/
     width: auto;
     height: 4em;
     background-color: white;
@@ -24,7 +26,7 @@
   flex-flow:  column wrap;
   align-content: space-between;
 }
-.container3{
+.container3{    /*contains 3 columns with 2 rows*/
     background-color: grey;
     width: auto;
     height: 3em;
@@ -32,16 +34,45 @@
     flex-flow: column wrap;
     align-content: space-between;
 }
-
-
+.container4{ /*containing 3 columns with 4 rows*/
+    background-color: white;
+    width: auto;
+    height: 5em;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+.container5{ /*contains 1 colum with 1 row*/
+    background-color: gold;
+    width: auto;
+    height: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 31%;       /*position offset to move the whole row further to the right. It needs to be aligned with container6*/
+    font-size: small;
+}
+.container6{
+    background-color: white;
+    width: auto;
+    height: 7em;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
 
 .box2{  /*box2 represents the text on the top right corner*/
 background-color: yellow;
 display: flex;
 flex-direction: row;
-justify-content: right;
+justify-content: right; /*push content to the right wall*/
 }
 .box3{
     background-color: turquoise;
-    margin-right: 0.5em; /*does not work, it needs different syntax*/  
+    margin-left: 0.5em; /*creates a small distance on the left (step effect to the right)*/  
+}
+.box4{ /*redundant code*/
+    background-color: hotpink;
+    /*display: flex;
+    flex-direction: row; /*all this code is redundant*/
+    /*justify-content: left;*/
 }
